@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
-import datetime
-import requests, bs4, docx
+import requests, bs4, datetime, docx
 
 #make document name from current date
 dt = datetime.datetime.now()
