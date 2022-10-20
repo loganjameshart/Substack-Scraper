@@ -3,7 +3,7 @@ Scrapes an inputted Substack newsletter page and outputs to a Word doc.
 
 ## How It's Made:
 
-Python Standard Library. External Python Libraries: python-docx, pysimplegui, beautifulsoup4
+Python Standard Library. External Python Libraries: python-docx, pysimplegui, beautifulsoup4, requests, datetime.
 
 My best friend writes a Substack newsletter, so I wanted to make something to get the raw text of his pages that I could later use to make one of those word-density cloud things. 
 
