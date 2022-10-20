@@ -8,6 +8,7 @@ documentTitle = "Substack Scraper "+ currentDate + ".docx"
 
 newDocument = docx.Document()
 
+#adding a GUI
 layout = [
     [sg.Text("Input link(s).")],      
     [sg.InputText(key="siteName", do_not_clear=False)],
@@ -16,8 +17,9 @@ layout = [
 
 window = sg.Window('Substack Article Scraper', layout)    
 links = []
-toggle = True #made toggle to create option to cancel program with notification
+toggle = True #made toggle to create option to cancel program with notification popup
 
+#create continuous window to accept links and add them to scraper list until the user clicks the Submit button
 while True:
     event, values = window.read()
     if event == "Submit" and len(links) == 0:
@@ -60,7 +62,3 @@ if toggle == True:
     sg.popup("Success! The document will be found in the same folder where the program is.")
 else:
     sg.popup("Operation cancelled.")
-
-
-#TODO
-###
