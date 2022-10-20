@@ -6,6 +6,7 @@ dt = datetime.datetime.now()
 currentDate = (str(dt.month)+"."+str(dt.day)+"."+str(dt.year))
 documentTitle = "Substack Scraper "+ currentDate + ".docx"
 
+#create new Word document
 newDocument = docx.Document()
 
 #adding a GUI
